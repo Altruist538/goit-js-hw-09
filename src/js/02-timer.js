@@ -25,7 +25,6 @@ fieldValueEl.forEach(
     (el.style.alignItems = 'center')
   )
 );
-
 const options = {
   enableTime: true,
   time_24hr: true,
@@ -41,7 +40,6 @@ const options = {
     }
   },
 };
-
 function convertMs(ms) {
   // Number of milliseconds per unit of time
   const second = 1000;
@@ -72,7 +70,6 @@ function startCountdown() {
       Notiflix.Report.success('The countdown has reached zero!');
       return;
     }
-
     startButton.disabled = true;
     const { days, hours, minutes, seconds } = convertMs(timeDifference);
 
