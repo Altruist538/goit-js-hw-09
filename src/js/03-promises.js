@@ -25,7 +25,7 @@ function exportPromis(event) {
   let delayValue = Number(delayEl.value);
   const stepValue = Number(stepEl.value);
   const amountValue = Number(amountEl.value);
-  for (let i = 0; i < amountValue; i += 1) {
+  for (let i = 1; i <= amountValue; i += 1) {
     createPromise(i, delayValue)
       .then(({ position, delay }) => {
         Notiflix.Notify.success(
